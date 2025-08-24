@@ -7,6 +7,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #3E362E;
   background-color: var(--light-brown, #AC8968);
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Colour scheme for the website, stolen from an architecture page!! 
@@ -33,6 +35,21 @@ hr {
     background-color: var(--btn-backgroundColor, #3E362E); /* this sets the color */
     width: 100%;           /* optional: full width */
     border: 20px solid none;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    display: block;
+    background-color: white;
+    padding: 2%;
+    margin: 10% auto; /*This centers the element horizontally*/
+    text-align: center;
 }
 
 
@@ -60,10 +77,6 @@ ul {
 .film-photos-landscape {
     display: block;
     width: 80%;
-    background-color: white;
-    padding: 5px;
-    margin: 0 auto; /*This centers the element horizontally*/
-    text-align: center;
 }
 
 figcaption {
