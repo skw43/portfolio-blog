@@ -48,8 +48,7 @@ img {
     display: block;
     background-color: white;
     padding: 2%;
-    margin: 10% auto; /*This centers the element horizontally*/
-    text-align: center;
+    margin: 2.5% auto; /*This centers the element horizontally*/
 }
 
 
@@ -90,4 +89,49 @@ div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background-color: olivedrab;
+    justify-content: center;
+    padding: 5%;
+}
+
+.header {
+    background-color: maroon;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /*This is to center them VERTICALLY*/
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo-grid-item {
+    max-width: 30%;
+    height: auto;
+    justify-content: center;
+}
+.small-img {
+    width: 100%;
+    height: auto;
 }
