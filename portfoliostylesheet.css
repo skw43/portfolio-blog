@@ -39,7 +39,7 @@ hr {
     margin-bottom: 2.5%;
 }
 
-h1 {
+h1, h2 {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
@@ -49,28 +49,28 @@ h1 {
 .portfolio-title {
     display: flex;
     flex-direction: column;
-    border-width: 10px;
+    border-width: 5rem;
     height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
     border: solid #3E362E;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 2rem;
 }
 
 @supports (animation-timeline: view()) {
     .portfolio-title {
         display: flex;
         flex-direction: column;
-        border-width: 10px;
         height: 80vh;
         margin-top: 10vh;
         margin-bottom: 10vh;
         border: solid #3E362E;
         justify-content: center;
         align-items: center;
-        border-radius: 10px;
+        border-width: 0.2rem;
+        border-radius: 2rem;
         animation: name duration timing-function delay iteration-count direction fill-mode;
         animation-name: slide-up;
         animation-fill-mode: both;
@@ -308,9 +308,17 @@ font-style:italic;
 
     .generic-fade {
     animation: fade-in auto both;
-    animation-timeline: view(70% 0%), view(70% 0%);
+    animation-timeline: view(60% 0%), view(70% 0%);
     border-radius: 10px;
     }
+}
+
+.center-button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    
 }
 
 .button {
@@ -321,7 +329,8 @@ font-style:italic;
     justify-content: center;
     height: auto;
     width: auto;
-    margin: 10%;
+    max-width: fit-content;
+    margin: 1rem;
     font-size: small;
     color: wheat;
     text-align: center;
@@ -331,12 +340,27 @@ font-style:italic;
     border-width: 2px;
 }
 
+.page-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    max-width: fit-content;
+    margin: 1rem;
+    font-size: small;
+    color: #3E362E;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    background-color:  wheat;
+    border-radius: 120px;
+    border-width: 2px;
+}
+
 /* This makes it so that links within buttons don't change color after you click on them */
 #button-link {
-    color: wheat;
     text-decoration: none;
 }
 
-#button-link:visited {
-    color: wheat; /* Same as regular to avoid purple */
-}
