@@ -116,10 +116,23 @@ div.text {
     justify-content: center;
     background-color: #AC896880;
     margin: 5%;
-    animation: fade-in-and-out auto both;
-    animation-timeline: view(5% 5%), view(5% 5%);
+    animation-name: fade-in;
+    animation-duration: 3s;
     border-radius: 10px;
 }
+
+@supports (animation-timeline: view()) {
+    .photo-grid-container {
+        display: flex;
+        justify-content: center;
+        background-color: #AC896880;
+        margin: 5%;
+        animation: fade-in-and-out auto both;
+        animation-timeline: view(5% 5%), view(5% 5%);
+        border-radius: 10px;
+    }
+}
+
 
 .photo-grid {
     width: 100%;
@@ -154,6 +167,21 @@ div.text {
         to {opacity: 0%;}
 }
 
+@keyframes fade-in {
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+}
+
+@keyframes pure-slide-from-right {
+    from {transform: translate(50%);}
+    to {transform: translate(0%);}
+}
+
+@keyframes pure-slide-from-left {
+    from {transform: translate(-50%);}
+    to {transform: translate(0%);}
+}
+
 @keyframes slide-in-from-right {
     from {transform: translate(50%, 50%); scale: 0.5;}
     50% {transform: translate(0%); scale: 1;}
@@ -167,14 +195,30 @@ div.text {
 
 }
 
+
 .right-grid-item {
+  animation: fade-in, pure-slide-from-right;
+  animation-duration: 5s;
+  animation-direction: both;
+}
+
+@supports (animation-timeline: view()) {
+  .right-grid-item {
     animation: slide-in-from-right, fade-in-and-out both, both;
-    animation-timeline: view(5% 5%), view(5% 5%); /*Really weird syntax, the 90% means "90% left" and the 5% means "5% covered*/
+    animation-timeline: view(5% 5%), view(5% 5%);
 }
 
 .left-grid-item {
+  animation: fade-in, pure-slide-from-left;
+  animation-duration: 5s;
+  animation-direction: both;
+}
+
+@supports (animation-timeline: view()) {
+.left-grid-item {
     animation: slide-in-from-left, fade-in-and-out both, both;
     animation-timeline: view(5% 5%), view(5% 5%); /*Really weird syntax, the 90% means "90% left" and the 5% means "5% covered*/
+}
 }
 
 
