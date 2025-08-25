@@ -39,6 +39,23 @@ hr {
     margin-bottom: 2.5%;
 }
 
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.portfolio-title {
+    display: flex;
+    flex-direction: column;
+    border-width: 10px;
+    height: 100vh;
+    border: solid #3E362E;
+    justify-content: center;
+    align-items: center;
+}
+
 p {
     margin-left: 5%;
     margin-right: 5%;
@@ -117,21 +134,68 @@ div.text {
 .photo-grid-container {
     display: flex;
     justify-content: center;
+    background-color: #AC8968;
+    margin: 5%;
+    animation: fade-in-and-out auto both;
+    animation-timeline: view(5% 5%), view(5% 5%);
 }
 
 .photo-grid {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
 }
 
 .photo-grid-item {
-    max-width: 30%;
+    flex-shrink: 1;
+    margin: 2%;
+    max-width: 45%;
     height: auto;
     justify-content: center;
+    align-content: center;
+    background-color: wheat;
 }
+
+
 .small-img {
     width: 100%;
     height: auto;
+    flex:1;
+}
+
+@keyframes fade-in-and-out {
+        from {opacity: 0%;}
+        50% {opacity: 100%;}
+        to {opacity: 0%;}
+}
+
+@keyframes slide-in-from-right {
+    from {transform: translate(50%, 50%); scale: 0.5;}
+    50% {transform: translate(0%); scale: 1;}
+    to {transform: translate(50%, -50%); scale: 0.5;}
+}
+
+@keyframes slide-in-from-left {
+    from {transform: translate(-50%, 50%); scale: 0.5;}
+    50% {transform: translate(0%);scale: 1;}
+    to {transform: translate(-50%, -50%); scale: 0.5;}
+
+}
+
+.right-grid-item {
+    animation: slide-in-from-right, fade-in-and-out both, both;
+    animation-timeline: view(5% 5%), view(5% 5%); /*Really weird syntax, the 90% means "90% left" and the 5% means "5% covered*/
+}
+
+.left-grid-item {
+    animation: slide-in-from-left, fade-in-and-out both, both;
+    animation-timeline: view(5% 5%), view(5% 5%); /*Really weird syntax, the 90% means "90% left" and the 5% means "5% covered*/
+}
+
+
+
+.img-description {
+font-style:italic;
 }
