@@ -217,6 +217,7 @@ div.text {
     animation: slide-in-from-right, fade-in-and-out both, both;
     animation-timeline: view(5% 5%), view(5% 5%);
 }
+}
 
 .left-grid-item {
   animation: fade-in, pure-slide-from-left;
