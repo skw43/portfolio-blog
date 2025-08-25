@@ -116,9 +116,19 @@ div.text {
     justify-content: center;
     background-color: #AC896880;
     margin: 5%;
+    border-radius: 10px;
+}
+
+@supports (animation-duration: 1s) {
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+    background-color: #AC896880;
+    margin: 5%;
     animation-name: fade-in;
     animation-duration: 3s;
     border-radius: 10px;
+}
 }
 
 @supports (animation-timeline: view()) {
