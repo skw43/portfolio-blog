@@ -105,6 +105,15 @@ img {
     margin: 2.5% auto; /*This centers the element horizontally*/
 }
 
+.photo-grid-item img {
+    max-width: 100%;
+    max-height: 80%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+
+}
+
 
 
 /* Generic box style */
@@ -150,6 +159,7 @@ div.text {
     justify-content: center;
     background-color: #AC896880;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 @supports (animation-duration: 1s) {
@@ -160,6 +170,8 @@ div.text {
     animation-name: fade-in;
     animation-duration: 8s;
     border-radius: 10px;
+    flex-wrap: wrap;
+
 }
 }
 
@@ -171,6 +183,7 @@ div.text {
         animation: slide-up auto both;
         animation-timeline: view(5% 5%), view(5% 5%);
         border-radius: 10px;
+        flex-wrap: wrap;
     }
 }
 
@@ -187,6 +200,8 @@ div.text {
     flex-shrink: 1;
     margin: 2%;
     max-width: 45%;
+    min-width: 20rem;
+    max-height: 80vh;
     height: auto;
     justify-content: center;
     align-content: center;
