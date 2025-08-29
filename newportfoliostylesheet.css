@@ -1,0 +1,129 @@
+:root {
+    --light-brown: #E7DECF;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3E362E;
+  background-color: var(--light-brown, #AC8968);
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* Colour scheme for the website, stolen from an architecture page!! 
+
+#865D36 Dark Brown (kind of like caramel Latte
+#3E362E Dark Brown/gray, basically the black of this page
+#93785B Medium tone brown
+#AC8968 Lighter tone borwn, leaning more towareds peach
+#A69080 The most neutral color of the page
+##e7decf A creamy colour
+
+
+*/
+
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+hr {
+    height: 2px;           /* this sets the thickness */
+    background-color: var(--btn-backgroundColor, #3E362E); /* this sets the color */
+    width: 100%;           /* optional: full width */
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+h1, h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    display: block;
+    background-color: white;
+    padding: 2%;
+    margin: 2.5% auto; /*This centers the element horizontally*/
+}
+
+
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.flexContainer {
+    display: flex;
+    max-width: 100%;
+    min-width: 400px;
+    height: auto;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #3E362E;
+    gap: 2rem;
+
+}
+
+.vertFlexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    min-width: 400px;
+    max-width: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #202fa0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+button {
+    margin: 3rem;
+    padding: 0.5rem;
+    background-color: #3E362E;
+    color: #E7DECF;
+    border-radius: 1.5rem;
+    animation: wiggle 2s ease-in-out infinite;}
+
+
+
+
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(4deg); }
+  20%  { transform: rotate(-4deg); }
+  30%  { transform: rotate(3deg); }
+  40%  { transform: rotate(-3deg); }
+  50%  { transform: rotate(2deg); }
+  60%  { transform: rotate(-2deg); }
+  70%  { transform: rotate(1deg); }
+  80%  { transform: rotate(-1deg); }
+  90%  { transform: rotate(0.5deg); }
+  100% { transform: rotate(0deg); }
+}
