@@ -1,11 +1,18 @@
 :root {
-    --light-brown: #E7DECF;
+    --darkest-color: #780000;
+    --dark-color: #c1121f;
+    --middle-color:#003566;
+    --light-color: #003490;
+    --lighter-color: #FFD60A;
+    --color: #669BBC;
+    --lightest-color: #fdf0d5;
+    --text-color: var(--middle-color);
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #3E362E;
-  background-color: var(--light-brown, #AC8968);
+  color: var(--text-color);
+  background-color: var(--middle-color);
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -31,7 +38,7 @@ body {
 
 hr {
     height: 2px;           /* this sets the thickness */
-    background-color: var(--btn-backgroundColor, #3E362E); /* this sets the color */
+    background-color: var(--middle-color); /* this sets the color */
     width: 100%;           /* optional: full width */
     margin-top: 2.5%;
     margin-bottom: 2.5%;
@@ -59,7 +66,7 @@ img {
 
 
 div.text {
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
   font-size: 22px;
   font-weight: 100;
 }
@@ -75,9 +82,8 @@ div.text {
     padding: 2.5%;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid #3E362E;
     gap: 2rem;
-    border-radius: 1rem;
+    background-color: var(--lightest-color);
 }
 
 .vertFlexContainer {
@@ -91,7 +97,7 @@ div.text {
     flex: 1;
     align-items: center;
     justify-content: space-around;
-    border-radius: 1rem;
+    background-color: var(--lightest-color);
 }
 
 img {
@@ -105,16 +111,20 @@ figcaption {
 }
 
 button {
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0.5rem;
-    background-color: #3E362E;
-    color: #E7DECF;
+    background-color: var(--color);
+    color: var(--lightest-color);
     border-radius: 1.5rem;
     animation: wiggle 2s ease-in-out infinite;}
 
 
 .page {
     opacity: 0%;
+    margin: 0;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    border-radius: 0;
 }
 
 .page.animateOnScroll {
