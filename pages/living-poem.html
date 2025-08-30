@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>My Memory of You is Hazy</title>
+    <link rel = "stylesheet" href="./../newportfoliostylesheet.css">
+    <script src="./../portfolioJS.js" defer></script>
+</head>
+
+<body>
+    <h1>
+        My Memory of You is
+    </h1>
+
+    <div class = "poem">
+    <p>
+        Hazy.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto magni incidunt minus perferendis? Ullam distinctio laudantium eum? Distinctio, expedita consequatur, reprehenderit repellendus eos eius incidunt ad officiis accusamus laborum sint.
+    </p>
+
+    </div>
+
+    <script>
+        console.log("internal script running")
+        const stanzas = document.querySelectorAll(".poem p")
+        console.table(stanzas)
+
+        stanzas.forEach((p) => {
+            const words = p.textContent.trim().split(" "); // Split by any whitespace
+            p.textContent = ""; // Clear the original paragraph content
+
+            words.forEach((word, i) => {
+            const span = document.createElement("span");
+            span.classList.add("ghostWord");
+            span.textContent = word;
+
+            p.appendChild(span);
+
+            // Optional: Add a space after each word (except the last one)
+            if (i < words.length - 1) {
+                p.appendChild(document.createTextNode(" "));
+            }
+            });
+        });
+
+        const splitWords = document.querySelectorAll(".ghostWord")
+
+        //This is the part of the script that now randomises how long each word lasts
+
+        splitWords.forEach(wordGhost => {const delay = Math.random()*20 + 5;
+        wordGhost.style.animationDelay = `${delay}s`;
+        
+        }
+        )
+
+
+    </script>
+
+</body>
+
+
+
+
+
+</html>

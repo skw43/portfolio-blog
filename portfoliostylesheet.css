@@ -200,7 +200,7 @@ div.text {
     flex-shrink: 1;
     margin: 2%;
     max-width: 45%;
-    min-width: 20rem;
+    min-width: 300px;
     max-height: 80vh;
     height: auto;
     justify-content: center;
