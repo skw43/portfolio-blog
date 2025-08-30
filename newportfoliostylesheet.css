@@ -67,7 +67,8 @@ div.text {
 .flexContainer {
     display: flex;
     max-width: 100%;
-    min-width: 400px;
+    min-width: 200px;
+    margin: 1%;
     height: auto;
     flex: 1;
     flex-wrap: wrap;
@@ -76,20 +77,21 @@ div.text {
     justify-content: space-around;
     border: 2px solid #3E362E;
     gap: 2rem;
-
+    border-radius: 1rem;
 }
 
 .vertFlexContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 1%;
     padding: 2.5%;
-    min-width: 400px;
+    min-width: 200px;
     max-width: 100%;
     flex: 1;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid #202fa0;
+    border-radius: 1rem;
 }
 
 img {
@@ -103,7 +105,7 @@ figcaption {
 }
 
 button {
-    margin: 3rem;
+    margin: 1rem;
     padding: 0.5rem;
     background-color: #3E362E;
     color: #E7DECF;
@@ -111,6 +113,34 @@ button {
     animation: wiggle 2s ease-in-out infinite;}
 
 
+.page {
+    opacity: 0%;
+}
+
+.page.animateOnScroll {
+    animation-name: graduallyAppear, translateUp;
+    animation-duration: 1s, 1s;
+    animation-direction:normal, normal;
+    animation-fill-mode: both, both;
+}
+
+.miniSection {
+    opacity: 0%;
+}
+
+.miniSection.animateOnScroll {
+    animation-name: graduallyAppear, translateUp;
+    animation-duration: 1s, 1s;
+    animation-direction:normal, normal;
+    animation-fill-mode: both, both;
+}
+
+.ghostWord {
+    animation-name: graduallyDisappear;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+}
 
 
 
@@ -127,3 +157,21 @@ button {
   90%  { transform: rotate(0.5deg); }
   100% { transform: rotate(0deg); }
 }
+
+@keyframes graduallyAppear{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes graduallyDisappear{
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+@keyframes translateUp {
+    0% {transform: translate(0%, 2.5%);}
+    100% {transform: translate(0%, 0%);}
+  
+}
+
+
