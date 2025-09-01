@@ -224,8 +224,8 @@ figcaption {
 
 hr {
     width: 80%;
-    text-align: center;
     justify-self: center;
+    align-self: center;
     background-color: var(--color);
 }
 
