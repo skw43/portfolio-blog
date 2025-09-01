@@ -20,8 +20,20 @@ const observer = new IntersectionObserver((entries, observer) => {entries.forEac
     }
 })
 }, {
-    threshold: 0.05 
+    threshold: 0.15
 })
 
 // This assigns the pages to the elements
 animationPages.forEach(page => observer.observe(page));
+
+
+
+const footer = document.getElementById('myFooter');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    footer.classList.add('visible');
+  } else {
+    footer.classList.remove('visible');
+  }
+});

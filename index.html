@@ -4,7 +4,7 @@
 
 <head>
     <meta charset = "UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kai's Blog and Portfolio!</title>
     <link rel="stylesheet" href="newportfoliostylesheet.css">
     <script src="portfolioJS.js" defer></script>
@@ -16,9 +16,7 @@
     <!-- Separating it out so that I don't have to think about it -->
     <div class = "page flexContainer" id="pageOne">
         <div class=" vertFlexContainer">
-            <h1>
-                Portfolio:
-            </h1>
+
             <h2>
                 Sheng Kai Wong
             </h2>
@@ -31,47 +29,50 @@
                 Mechanical Engineering
             </h3>
             <br>
-            <p>Let's Connect:</p>
+            <br>
+            <p>Get in touch!</p>
             <br>
             <div class="flexContainer">
                 
-                <button> LinkedIn </button>
-                <button> email </button>
+                <div class="vertFlexContainer">
+                <a class="link buttonImage" href = "https://www.linkedin.com/in/sheng-kai-wong/" target = "_blank" rel="noopener"> <img src = "./buttons/LinkedIn_icon.svg.webp"></a>
+
+                </div>
+
+                <div class="vertFlexContainer">
+                <a class="link buttonImage" href = "mailto:shengers.wong.011@gmail.com" target = "_blank" rel="noopener"> <img src = "./buttons/Gmail_icon_(2020).svg.png"></a>
+                </div>
             </div>
 
         </div>
 
         <div class="titleCard vertFlexContainer">
-            <img src='./../portfolio-images/me.jpg' class="small-img" id="film-text"/>
+            <img src='./portfolio-images/landing-page/profile.jpg' class="small-img" id="profile-photo"/>
         </div>
 
         
 
     </div>
+
+    <hr>
 
     
 
-    <div class= "page vertFlexContainer" id="pageThree">
-
+    <div class= "page vertFlexContainer" id="helloPage">
+        <br>
         <div class = "flexContainer">
-            <div class = "vertFlexContainer">
+            <div class = "flexContainer">
                 <h1>
-                    Hello!
+                    About
                 </h1>
 
                 <p class="generic-fade">
-                Hello and welcome to my portfolio! I am a recent graduate from the University of Bath, currently seeking graduate work opportunities within the United Kingdom and surrounding areas. I completed my integrated masters in mechanical engineering in July 2025, including a master's dissertation in biomechanical simulations, and received an Upper Second-Class Honours. </p>
-
-                <br>
+                Hi! I am a recent mechanical engineering graduate from the University of Bath, currently seeking work opportunities within the United Kingdom and surrounding areas. I completed my integrated masters July 2025, receiving an Upper Second-Class Honours. </p>
 
                 <p>
-                    This portfolio contains a selection of engineering projects I completed as part of my degree, as well as a little bit about who I am as a person! Feel free to have a skim, and thank you for reading!
+                    This portfolio contains a selection of engineering and personal projects, as well as a little bit about me! Feel free to have a skim, and thank you for reading!
                 </p>
-            </div>
-            <div class="vertFlexContainer">
-            <p>
-                Put an image in here
-            </p>
+                <br>
             </div>
         </div>
 
@@ -79,67 +80,230 @@
 
     </div>
 
-    <div class="page vertFlexContainer">
-        <div class="flexContainer">
-            <h1>
-                Featured projects
-            </h1>
+    <hr>
 
-        </div>
-        <div class="flexContainer miniSection">
-            <div class="coolImage">
-                <img src='./../portfolio-images/Ireland-cliffs-moher.jpg'/>
-                <figcaption>Cliffs of Moher, July 2025</figcaption>
+
+    
+
+    <div class="page vertFlexContainer generic-fade">
+
+        <h1 class="generic-fade">
+            Featured projects
+        </h1>
+        
+        <div class="flexContainer miniSection generic-fade">
+            <div class="coolImage generic-fade">
+                <img src='./portfolio-images/landing-page/biomechanics-workflow.jpg' class="tooWide"/>
+                <figcaption>Flowchart simulating key steps in biomechanical simulations using OpenSim</figcaption>
 
             </div>
 
-            <div class="pageDescriptionContainer vertFlexContainer">
+            <div class="pageDescriptionContainer vertFlexContainer generic-fade">
                 <div class="pageDescription">
+                    <h2 class="generic-fade">
+                        MEng Dissertation
+                    </h2>
+                    <h4>
+                        Biomechanical loading of the musculoskeletal system during exercise
+                    </h4>
+                    <br>
                     <p>
-                        I graduated from the University of Bath in 2025 with a MEng (hons) in Mechanical Engineering. In addition to classic engineering principles (structural mechanics, thermodynamics, fluids, and so on), my degree had a heavy emphasis on design engineering and working in small-to-medium sixed groups. 
+                        For my Master's dissertation, I used biomechanical simulations to examine how different exercise movements exerted loads on the human skeleton. Specifially, I focused on calculating loads in the hip, knee, and ankle joints, as lower limb and hip fractures are associated with the highest mortality rates in osteoporotic patients.
+                    </p>
+                    <br>
+                    <p>
+                        My research consisted of three distinct phases. The first phase including preparing large datasets of motion-capture data for simulation (100K+ readings per dataset), using JavaScript and MATLAB scripting to automate the process. I then used this data to create and scale musculoskeletal models within OpenSim (biomechanical simulation software), and run simulations for various participants and exercise movements. Finally, I used MATLAB to assist in data post-processing, assessing simulation results and performance.
+                    </p>
+                    <br>
+                    <p>
+                        In addition to my primary results, a key deliverable in my research (and the one that I am most proud of) was a novel statistical framework that I adapted from sociology. I developed this framework to address the literature gap in quantifying simulation performance, and used it as a means of validation, and for automating outlier detection.
                     </p>
                 </div>
 
-                <button>
-                    List of modules
-                </button>
+                <div class = "flexContainer generic-fade">
+                    <div class="keySkill">JavaScript</div>
+                    <div class="keySkill">MATLAB</div>
+                    <div class="keySkill">OpenSim</div>
+                    <div class="keySkill">Statistics</div>
+
+            
+                <a href="./portfolio-images/Ireland-cliffs-moher.jpg" class="button"> My Dissertation! </a>
+                
+                </div>
 
             </div>
         </div>
 
+            <hr>
+
+
+            <div class="flexContainer miniSection generic-fade">
+                <div class="coolImage">
+                    <img src='./portfolio-images/landing-page/GBDP.jpg' class="tooWide"/>
+                    <figcaption>Final render of technical solution, with chassis subsystem coloured red.</figcaption>
+
+                </div>
+
+                    <div class="pageDescriptionContainer vertFlexContainer">
+                        <div class="pageDescription">
+                            <h2>
+                                Group Business and Design Project
+                            </h2>
+                            <p>
+                                The Group Business and Design Project (GBDP) is a semester-long group project, equivalent in scope to a BEng dissertation. Working in a group of five engineering students from different disciplines, each group develops a technical design to meet the client specifications of an industry sponsor.
+                            </p>
+                            <br>
+
+                            <h4>
+                                Technical Role: Chassis Design of a Concrete Pump
+                            </h4>
+                            <p>
+                                My group was tasked with producing a concrete pump suitable for small-scale, off-terrain construction sites. Current solutions either exceed the needs for a small site, and consequently require premium hiring costs. Conversely, smaller-scale solutions (i.e. mixing concrete on-site) do not satisfy industry standards for building concrete foundations.
+                            </p>
+                            <br>
+                            <p>
+                                I was responsible for designing the pump chassis subsystem, capable of supporting up to two tonnes of concrete and machinery when in use, whilst also being legislation-compliant with road and construction regulations. Inventor Nastran was used to assess the structural integrity of key subsystem features such as rivets and joints, and Granta Edupack to assist in material selection.
+                            </p>
+                            <br>
+
+                            <h4>
+                                Managerial Role: Group Business Manager
+                            </h4>
+
+                            <p>
+                                As the group business manager, I oversaw that the group's technical solution was developed with a high level of commercial awareness. In addition to leading quantitative market research, I also organised and led a series of telephone-interviews with industry professionals involved with different stages of concrete pouring. This proved invaluable to informing on the commercial viability of the final technical design.  
+                            </p>
+                            <br>
+                        </div>
+
+                        <div class = "flexContainer">
+                            <div class="keySkill">Inventor</div>
+                            <div class="keySkill">Inventor Nastran</div>
+                            <div class="keySkill">FEA</div>
+                            <div class="keySkill">Design</div>
+                            <div class="keySkill">Legislation</div>
+                            <div class="keySkill">Group Work</div>
+                            <div class="keySkill">Group Management</div>
+                            <div class="keySkill">Market Research</div>
+                            
+
+                        <a href="./Reports/ShengKai_Wong_skw43_FYP_Report.pdf" class="button">
+                            Read my Report!
+                        </a>
+                        </div>
+
+                    </div>
+            </div>
+
+                <hr>
+
+
+            <div class="flexContainer miniSection generic-fade">
+                <div class="coolImage generic-fade">
+                    <img src='./portfolio-images/landing-page/transient.jpg' class="tooWide"/>
+                    <figcaption>Example MATLAB plot produced using 1D-mesh model.</figcaption>
+
+                </div>
+
+                    <div class="pageDescriptionContainer vertFlexContainer generic-fade">
+                        <div class="pageDescription generic-fade">
+                            <h2>
+                                Systems Modelling using MATLAB
+                            </h2>
+                            <br>
+                            <h4>
+                                Overview
+                            </h4>
+                            <p>
+                                Developed and verified a MATLAB-based finite element model to simulate the transient diffusion-reaction-source equation. This included designing a modular code architecture that incorporated 1D-mesh generation, boundary condition handling, matrix assembly, and flexible time-stepping schemes.
+                                
+                            </p>
+ 
+                            <br>
+
+
+                            <br>
+
+                            <p>
+                                Model validation was handled via unit-testing, comparing model sub-assembly and full-assembly outputs to analytical solutions for multiple test-cases. Model performance was assessed using L2-norm analysis, optimising mesh resolution and timestep selection to balance computational cost with accuracy.
+                            </p>
+
+                            <br>
+                            <br>
+
+                            <h4>Application: Simulating heat transfer through skin tissue</h4>
+                            <p>
+                                This base model was extended to simulate heat transfer in biological tissue, incorporating separate meshes to represent layered skin structures. Simulations were run to predict time and temperature thresholds for second-and third-degree burns, implementing binary and exponential search algorithms to determine burn times.
+                            </p>
+                            <br>
+                            <p>
+                                Insulation materials, such as Kevlar and Wool, were tested, including the impact of considering air as a separate layer of insulation. Model design, validation, and results were recorded in a concise 3000-word report.
+                            </p>
+                        </div>
+
+                        <div class = "flexContainer">
+                            <div class="keySkill">MATLAB</div>
+                            <div class="keySkill">Code Testing</div>
+                            <div class="keySkill">Algorithm Search</div>
+                            <div class="keySkill">Simulations</div>
+                            
+                            
+
+                        <a href="./Reports/skw43_11669_ME40064_TransientFEMModelling.pdf" class="button">Read my Report!
+
+                        </a>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <hr>
+
+
+
+    
+
+    <div class="page vertFlexContainer gradientWrapper" id="otherProjectsPage">
+        <h1>
+            Other Projects
+        </h1>
         <div class="flexContainer miniSection">
             <div class="coolImage">
-                <img src='./portfolio-images/Otter.jpg' class="small-img" id="film-text"/>
-                <figcaption class="portfolio-img-cap">Cliffs of Moher, July 2025</figcaption>
+                <img src='./../portfolio-images/Odin.png' class="tooWide"/>
+                <figcaption><a class="link" href = "https://www.theodinproject.com" target = "_blank" rel="noopener">The Odin Project</a> </figcaption>
 
             </div>
+
+            
 
             <div class="pageDescriptionContainer vertFlexContainer">
-
-                <h3 class="pageDescription">
-                    Group work at Bath
-                </h3>
-                <br>
-
-                <p class="pageDescription">
-                    Of our group projects I completed in university, the largest was the semester-long 'Group Business and Design Project' (GBDP) taking place at the end of third year. This project had the same same scale as a BEng dissertation equivalent, where we worked in a group of 
-                </p>
-
-                <button>
-                    This is a button
-                </button>
-
+                <div class="pageDescription">
+                    <h2>
+                        Web Development
+                    </h2>
+                    <p>
+                        Upon finishing my degree, I found myself itching to further develop my programming skills. To accomplish this, I am currently learn full-stack web development using the online self-paced course <a class="link" href = "https://www.theodinproject.com" target = "_blank" rel="noopener">The Odin Project</a>.  
+                    </p>
+                    <br>
+                    <p>
+                        Part of this project, of course, was building the portfolio you're reading right now!! In addition to programming, I am also taking this as an opportunity to practice UX/UI principles, repository documentation, and responsive design. To have an idea of what I'm working on, here's my <a class="link" href = "https://github.com/skw43" target = "_blank" rel="noopener">GitHub</a>, including the repository for <a class="link" href = "https://github.com/skw43/portfolio-blog" target = "_blank" rel="noopener">this website</a>! 
+                    </p>
+                    <br>
+                    <div class="flexContainer">
+                        <div class="keySkill">JavaScript</div>
+                        <div class="keySkill">HTML</div>
+                        <div class="keySkill">CSS</div>
+                        <div class="keySkill">Node.JS</div>
+                        <div class="keySkill">Git & GitHub</div>
+                        <a class="link button" href = "https://github.com/skw43/portfolio-blog" target = "_blank" rel="noopener">View my GitHub</a>
+                    </div>
+                </div>
             </div>
-
             
-        </div>
-    </div>
-
-    <div class="page flexContainer">
-        <div class="flexContainer">
-            <h1>
-                Other Projects
-            </h1>
 
         </div>
     </div>
@@ -147,129 +311,18 @@
     <div class="page flexContainer">
         <div class="flexContainer">
             <h1>
-                My Hobbies and Interests
+                Hobbies and Interests
             </h1>
 
         </div>
     </div>
 
 
-    <div class="page" id="pageFour">
-        <div class = "aboutWebsite flexContainer">
-
-            <h1>
-                About this website
-            </h1>
-
-            <p>
-
-            Thanks for browsing my portfolio! Hello and welcome to my website!! This website is a personal project that I'm undertaking to both start building up a portfolio and to learn some web development skills. I'm doing so with the help of <a href = "https://www.theodinproject.com/" target = "_blank"  rel = "noopener">The Odin Project</a>, an open-source resource that teaches beginners some rudimentary skills, with the intention of giving some exposure to full-stack web development.</p><br>
-            
-            <p class="generic-fade"> In regards to languages, the Odin Project covers the basics of HTML, CSS, and JavaScript, and then follows into either RoR or .node frameworks (I haven't quite decided which of these I'll adopt just yet, but I'll think about it when I get there!!). </p>
-
-            <br><p>
-            As it stands, I'm still setting up the main display features on the client-side, so there isn't much up and running now except for the 'Film Photography' page - but I'm working on it, and and will have the others up very soon.
-        </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer flexContainer">
-
-    </div>
-
+ 
 
 
 
 
 </body>
-
-<!-- <body>
-   
-
-        
-
-
-
-    <br>
-
-    <p class="generic-fade">
-        I intend to use this website for a couple things, but mostly as a form of archival where I can rest easy knowing that I don't have to rely on any third-party paid services (I am currently VERY broke, and therefore cannot justify paying for a third-party hosting service). I'm currently hosting this via GitHub Pages, which you can view <a href = "https://github.com/skw43/portfolio-blog" target = "_blank"  rel = "noopener">here</a>. This repository also includes all of the source code to this project if you would like to have a look.
-    </p>
-
-    <br> <!--This is a line break -->
-
-<!--     
-    <hr>
-    <h2 class="generic-fade">
-        What I'm Working on Now
-    </h2>
-    <p class="generic-fade">I'm currently working on <a href = "./pages/flexbox-template.html" target="_blank" rel="noopener">this page right here (Film Photography)</a>, trying to practice with the FlexBox format whilst getting familiar with CSS. For the best experience, I recommend viewing it on a newish version of Chrome Desktop as it uses the <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline" target="_blank" rel="noopener">animate-timeline</a> function on CSS (Scroll-based animations), which hasn't been universally adopted just yet. (I've put in some older animations too in case your browser doesn't support this, but honestly? they're not as fun).</p>
-    <br>
-    <hr>
-
-    <h2>
-        Some of the webpages I'm planning on making
-    </h2>
-    <p>
-        Pretty self explanatory! I'm building a website, so I'll have to make pages :)
-    </p>
-
-    <br>
-
-    <div class="center-button-container">
-
-        <a class="button" id="button-link" href = "./pages/about-me.html" target = "_blank" rel="noopener">About me</a>
-
-        <a class="button" id="button-link" href = "" target = "_blank" rel="noopener">My Engineering Portfolio</a>
-
-        <a class="button" id="button-link" href = "./pages/flexbox-template.html" target = "_blank" rel="noopener">Film Photography</a>
-
-        <a class="button" id="button-link" href = "./pages/reading.html" target = "_blank" rel="noopener">What I've Been Reading</a>
-
-        <a class="button" id="button-link" href = "" target = "_blank" rel="noopener">Personal Essays</a>
-
-        <a class="button" id="button-link" href = "" target = "_blank" rel="noopener">My Favourite Pieces</a>
-
-    </div>
-
-    <hr>
-
-        <h2 class="generic-fade">
-            Colour codes for the pallette I'm using throughout my website
-        </h2>
-        <ul class="generic-fade">
-            <li style="color: #865D36;">#865D36 Dark Brown (kind of like caramel Latte)</li>
-            
-            <li style="color: #3E362E;">#3E362E Dark Brown/gray, basically the black of this page</li>
-            <li style="color: #93785B;">#93785B Medium tone brown</li>
-            <li style="color: #AC8968;">#AC8968 Lighter tone borwn, leaning more towards peach</li>
-            <li style="color: #A69080;">#A69080 The most neutral color of the page</li>
-        </ul>
-
-        <hr class="generic-fade">
-        <p class="generic-fade" style="text-align: center;"> That's all for now! Until next time</p>
-        <br>
-        <p class="generic-fade" style="text-align: center; font-style: italic;">- Kai</p>
-
-        <div class="footer-pane">
-
-        <div>
-            <a id="button-link" class="button" href = "./index.html" target="_blank" rel="noopener">Home</a>
-        </div>
-
-        <div>
-            <a class="page-button" id="button-link" href = "./pages/flexbox-template.html" target = "_blank" rel="noopener">Film Photography</a>
-        </div>
-        <div class="footer-contact">
-                <a id="button-link" class="button" href = "https://www.linkedin.com/in/sheng-kai-wong/" target="_blank" rel="noopener">LinkedIn:</a>
-        </div>
-            
-    </div> --> 
-
-    
-
 
 </body>
