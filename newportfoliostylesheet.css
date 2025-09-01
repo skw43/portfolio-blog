@@ -134,6 +134,11 @@ div.text {
     justify-content: space-between;
 }
 
+#pageOne .vertFlexContainer {
+    align-items: center;
+    justify-content: center;
+}
+
 figcaption {
     font-style: italic;
     text-align: center;
@@ -179,7 +184,7 @@ figcaption {
 }
 
 #pageOne {
-    height: 90vh;
+    min-height: 90vh;
 }
 
 
