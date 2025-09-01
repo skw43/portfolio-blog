@@ -20,7 +20,7 @@ const observer = new IntersectionObserver((entries, observer) => {entries.forEac
     }
 })
 }, {
-    threshold: 0.15
+    threshold: 0.1
 })
 
 // This assigns the pages to the elements

@@ -103,8 +103,9 @@ a:visited {
 }
 
 #profile-photo {
-    width: 400px;             /* Adjust size as needed */
-  height: 400px;
+  width: 250px;             /* Adjust size as needed */
+  height: 250px;
+  max-width: 50vh;
   object-fit: cover;        /* Keeps image proportional */
   border-radius: 50%;       /* Makes it a perfect circle */
   display: block;
@@ -210,7 +211,12 @@ figcaption {
 }
 
 #pageOne {
-    min-height: 90vh;
+    min-height: 90vh
+}
+
+
+#pageOne .flexContainer{
+    justify-content: space-around;
 }
 
 
