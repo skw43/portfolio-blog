@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => console.log("you're scrolling!!"))
 
 //This creates an observer object for all the page elements
 
-const animationPages = document.querySelectorAll(".page, .page > *")
+const animationPages = document.querySelectorAll(".page, .page > *, img")
 
 const observer = new IntersectionObserver((entries, observer) => {entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -25,8 +25,6 @@ const observer = new IntersectionObserver((entries, observer) => {entries.forEac
 
 // This assigns the pages to the elements
 animationPages.forEach(page => observer.observe(page));
-
-
 
 const footer = document.getElementById('myFooter');
 
