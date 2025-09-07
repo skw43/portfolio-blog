@@ -1,0 +1,3 @@
+This is the general plan for how I'm going to design this website:
+
+1. 
