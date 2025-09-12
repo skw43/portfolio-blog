@@ -1,3 +1,8 @@
 This is the general plan for how I'm going to design this website:
 
-1. 
+1. Make a few dummy elements that you can test out to see how the grid looks
+2. Design a JS script that will load all the elements into a certain layout: play around with pure grid and perhaps hex? Hex may be more efficient as it means can arrange everythng as a grid
+3. Make a conditional script loading - I think it can be in the same JS filt just put into a huge switch statement.
+4. 
+
+Use the grid auto-fit fumnction if you want to automatically set the columns!!
